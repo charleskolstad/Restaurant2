@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            :root{
+                --Sienna:#9F6B38;/*159, 107, 56*/
+                --SeaGreen:#39954A;/*57, 149, 74*/
+                --DarkSlateGrey:#191C1F;/*25, 28, 31*/
+                --DarkOliveGreen:#5D3C31;/*93, 60, 49*/
+                --LightGrey:#CFCECC;/*207, 206, 204*/
+            }
+            
+            .navbar-brand{
+                font-size: 1.75em;
+            }
+
+            .nav-link{
+                font-size: 1.5em;
+            }
+
+            .hero-image{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(assets/img/jay-wennington-2065-unsplash.jpg);
+                min-height: 60vh;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            .hero-text{
+                border: solid 5px;
+                text-shadow: 4px 4px 4px black;
+            }
+
+            .hero-text .lead{
+                text-decoration: underline;
+                font-weight: 600;
+                text-shadow: none;
+            }
+            
+            .main-content{
+                min-height: 25vh;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-image jumbotron jumbotron-fluid text-light">
+            <div class="hero-text container my-4 p-4">
+                <h1 class="display-2">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+        
+        <div class="main-content container">
+            <div class="display-4">My Stuff</div>
+        </div>
+       
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 80){
+                    $(".navbar-brand").css("font-size", "1.25em");
+                    $(".nav-link").css("font-size", "1em");
+                    $(".navbar").css("background-color","beige");
+                }else{
+                    $(".navbar-brand").css("font-size", "1.75em");
+                    $(".nav-link").css("font-size", "1.5em");
+
+                    $(".navbar").css("background-color","rgba(0,0,0,0)");
+                }
+            });
+        </script>
+    </body>
+</html>
